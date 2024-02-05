@@ -1,0 +1,16 @@
+<div class="home">
+  <app-search
+    (onSearch)="searchUsers($event)"
+    (onSearchEmpty)="changeSearchRequest()"
+  ></app-search>
+  <app-users-table [users]="users"></app-users-table>
+
+  <button
+    class="home__refresh-button"
+    (click)="refreshUsers()"
+    mat-raised-button
+    color="primary"
+  >
+    Refresh users
+  </button>
+</div>

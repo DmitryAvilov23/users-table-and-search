@@ -1,0 +1,20 @@
+<div class="search">
+  <mat-form-field class="search__search-field">
+    <input
+      matInput
+      [(ngModel)]="searchRequest"
+      (ngModelChange)="checkIsSearchEmpty()"
+      placeholder="Enter user name"
+      value=""
+    />
+  </mat-form-field>
+
+  <button
+    class="search__submit-btn"
+    (click)="searchUsers()"
+    mat-raised-button
+    color="primary"
+  >
+    Search
+  </button>
+</div>

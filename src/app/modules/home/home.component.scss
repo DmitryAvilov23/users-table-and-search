@@ -1,0 +1,10 @@
+.home {
+  padding: 20px;
+  max-width: 100vw;
+  overflow: hidden;
+
+  &__refresh-button {
+    display: block;
+    margin: 20px auto;
+  }
+}
